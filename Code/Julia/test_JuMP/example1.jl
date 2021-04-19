@@ -8,8 +8,6 @@ optimization.
 For an explanation of each line, see
 https://jump.dev/JuMP.jl/v0.21.6/quickstart/#Quick-Start-Guide
 ```
-
-
 using JuMP
 import GLPK
 

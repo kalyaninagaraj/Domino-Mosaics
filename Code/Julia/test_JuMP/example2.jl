@@ -1,5 +1,3 @@
-
-
 # example2.jl
 # ===========
 # Model and solve a Sudoku puzzle as an IP
