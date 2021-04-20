@@ -63,5 +63,6 @@ To know more about domino mosaics, and their interpretation as the solution to a
 [@kalyaninagaraj](https://github.com/kalyaninagaraj)
 
 ## References
-1. [This book review](https://blogs.scientificamerican.com/roots-of-unity/the-mathematics-of-opt-art/) in the Scientific American of Bob Bosch's book [Opt Art](https://press.princeton.edu/books/hardcover/9780691164069/opt-art) is a great introduction to the author's unique take on _pointillism-via-optimization_. 
+1. This [book review](https://blogs.scientificamerican.com/roots-of-unity/the-mathematics-of-opt-art/) in the Scientific American of Bob Bosch's book [Opt Art](https://press.princeton.edu/books/hardcover/9780691164069/opt-art) is a great introduction to the author's unique take on _pointillism-via-optimization_. 
 2. Details on how to model the integer program  can be found in the article ["Constructing Domino Portraits"](http://www.optimization-online.org/DB_FILE/2003/09/722.pdf) in ["Tribute to a Mathemagician"](https://www.routledge.com/Tribute-to-a-Mathemagician/Cipra-Demaine-Demaine-Rodgers/p/book/9780367446536). 
+3. Check out all of [Bob Bosch's Mathematical Art] (http://www.dominoartwork.com/) and [Ken Knowlton's Mosaics](http://www.kenknowlton.com/)
