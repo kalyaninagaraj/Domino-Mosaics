@@ -62,4 +62,4 @@ To know more about domino mosaics, and their interpretation as the solution to a
 [@kalyaninagaraj](https://github.com/kalyaninagaraj)
 
 ## References
-Details on how to model the integer program  can be found in ["Constructing Domino Portraits" in Tribute to a Mathemagician"](http://www.optimization-online.org/DB_FILE/2003/09/722.pdf). 
+Details on how to model the integer program  can be found in ["Constructing Domino Portraits"](http://www.optimization-online.org/DB_FILE/2003/09/722.pdf) in the book ["Tribute to a Mathemagician"](https://www.routledge.com/Tribute-to-a-Mathemagician/Cipra-Demaine-Demaine-Rodgers/p/book/9780367446536). 
