@@ -38,11 +38,12 @@ OUTPUT: A scaled and compressed image file `Data/Compressed_Images/CE.txt` in th
 CODE: `Code/Julia/ModuleDominoes.jl`
 TO RUN CODE: 1. Open Terminal and change current directory to `Code/Julia/`. 
              2. Open Julia by entering `julia` at the command line. 
-             3. ```
-                julia> include("ModuleDominoes.jl")
-                julia> using .Dominoes
-                julia> dominoes("CE", "white", "constrained")
-                ```
+             3. Enter the following commands. 
+```
+julia> include("ModuleDominoes.jl")
+julia> using .Dominoes
+julia> dominoes("CE", "white", "constrained")
+```
 INPUT: The input parameter `constrained` indicates that complete sets of dominoes will be used to generate the final mosaic. Setting this last parameter to `unconstrained` indicates to the code that the mosaic can be built from an unending supply of dominoes, which naturally does not make for an interesting optimization problem. 
 OUTPUT: The second input parameter determines the color of the dots on the dominoes. For the above example, the code will generate `Data/Mosaic_Images/CE_white_constrained.png`. 
 
