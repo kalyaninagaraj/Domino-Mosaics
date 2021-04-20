@@ -2,7 +2,7 @@
 
 
 ## About
-This repository is home to optimization code in Julia that approximates a grayscale image with complete sets of [double-nine dominoes](http://www.domino-games.com/domino-rules/double-nine.html). 
+This repository is home to optimization code in Julia that approximates a grayscale image with an image formed by complete sets of [double-nine dominoes](http://www.domino-games.com/domino-rules/double-nine.html). 
 
 <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Target_Images/CE.jpg"><img src="/Data/Target_Images/CE.jpg?raw=true" width="215px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/CE_white.png"><img src="/Data/Mosaic_Images/CE_white.png?raw=true" width="200px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/CE_black.png"><img src="/Data/Mosaic_Images/CE_black.png?raw=true" width="200px"></a>
 
