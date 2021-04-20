@@ -34,7 +34,7 @@ To know more about domino mosaics, and their interpretation as the solution to a
       3. Run code by entering `preprocessImage ('CE')`. 
 
    - INPUT: 
-      1. `CE.jpg` is the target image saved in `Data/Target_Images/`.
+      1. Input parameter `'CE'` directs the code to look for the target image `CE.jpg` in `Data/Target_Images/`.
       2. The code will ask user to manually enter dimensions `m` and `n` of the domino portrait. These dimensions are such that `mn = 110s`, where `s` is the number of complete sets used in the image. Also, manually enter `k`, the size of each cell, such that `mk` equals the number of rows of pixels and `nk` equals the number of columns of pixels in the trimmed image. For this example, set `m` to , `n` to , and `k` to . 
 
    - OUTPUT: A scaled and compressed image file `Data/Compressed_Images/CE.txt` in the form of a matrix of integers ranging from 0 and 9. 
@@ -54,7 +54,7 @@ To know more about domino mosaics, and their interpretation as the solution to a
        julia> using .Dominoes
        julia> dominoes("CE", "white", "constrained")
        ```
-   - INPUT: The input parameter `constrained` indicates that complete sets of dominoes will be used to generate the final mosaic. Setting this last parameter to `unconstrained` indicates to the code that the mosaic can be built from an unending supply of dominoes, which naturally does not make for an interesting optimization problem. 
+   - INPUT: The input parameter `"constrained"` indicates that complete sets of dominoes will be used to generate the final mosaic. Setting this last parameter to `"unconstrained"` indicates to the code that the mosaic can be built from an unending supply of dominoes, which naturally does not make for an interesting optimization problem. 
 
    - OUTPUT: The second input parameter determines the color of the dots on the dominoes. For the above example, the code will generate `Data/Mosaic_Images/CE_white_constrained.png`. 
 
