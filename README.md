@@ -35,7 +35,7 @@ To know more about domino mosaics, and their interpretation as the solution to a
 
    - INPUT: 
       1. Input parameter `'CE'` directs the code to look for the target image `CE.jpg` in `Data/Target_Images/`.
-      2. The code will ask user to manually enter dimensions `m` and `n` of the domino portrait. These dimensions are such that `mn = 110s`, where `s` is the number of complete sets used in the image. Also, manually enter `k`, the size of each cell, such that `mk` equals the number of rows of pixels and `nk` equals the number of columns of pixels in the trimmed image. For this example, set `m` to , `n` to , and `k` to . 
+      2. The code will ask user to manually enter dimensions `m` and `n` of the domino portrait. These dimensions are such that `mn = 110s`, where `s` is the number of complete sets used in the image. Also, manually enter `k`, the size of each cell, such that `mk` equals the number of rows of pixels and `nk` equals the number of columns of pixels in the trimmed image. For this example, set `m` to 44, `n` to 30, and `k` to 26. 
 
    - OUTPUT: A scaled and compressed image file `Data/Compressed_Images/CE.txt` in the form of a matrix of integers ranging from 0 and 9. 
 
