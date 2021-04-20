@@ -1,4 +1,4 @@
-# Domino Mosaics a-la Robert Bosch and Ken Knowlton
+# Domino Mosaics, a-la Robert Bosch and Ken Knowlton
 <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Target_Images/CE.jpg"><img src="/Data/Target_Images/CE.jpg?raw=true" width="215px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/CE_white.png"><img src="/Data/Mosaic_Images/CE_white.png?raw=true" width="200px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/CE_black.png"><img src="/Data/Mosaic_Images/CE_black.png?raw=true" width="200px"></a>
 
 Two Clint Eastwood mosaics, each in 12 complete sets of double-nine dominoes; the first with white dots on black tiles, and the other with black dots on white tiles. 
