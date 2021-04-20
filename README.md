@@ -62,5 +62,4 @@ To know more about domino mosaics, and their interpretation as the solution to a
 [@kalyaninagaraj](https://github.com/kalyaninagaraj)
 
 ## References
-1. IP modeling details can be found in ["Constructing Domino Portraits" in Tribute to a Mathemagician"](http://www.optimization-online.org/DB_FILE/2003/09/722.pdf). 
-2. For Bob Bosch's idea of domino steganography see [here](http://archive.bridgesmathart.org/2020/bridges2020-199.pdf). 
+Details on how to model the integer program  can be found in ["Constructing Domino Portraits" in Tribute to a Mathemagician"](http://www.optimization-online.org/DB_FILE/2003/09/722.pdf). 
