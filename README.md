@@ -1,8 +1,7 @@
 # Domino Mosaics a la Robert Bosch (and Ken Knowlton)
 
-
 ## About
-This repository is home to optimization code (written in Julia) that approximates a given image (could be color or grayscale) with a mosaic in complete sets of [double-nine dominoes](http://www.domino-games.com/domino-rules/double-nine.html). 
+This repository is home to optimization and image processing code that approximates a given image (could be color or grayscale) with a mosaic in complete sets of [double-nine dominoes](http://www.domino-games.com/domino-rules/double-nine.html). 
 
 <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Target_Images/HM.jpg"><img src="/Data/Target_Images/HM.jpg?raw=true" width="245px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/HM_white_constrained.png"><img src="/Data/Mosaic_Images/HM_white_constrained.png?raw=true" width="250px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/HM_black_constrained.png"><img src="/Data/Mosaic_Images/HM_black_constrained.png?raw=true" width="250px"></a>
 
