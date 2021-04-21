@@ -2,11 +2,11 @@
 
 
 ## About
-This repository is home to optimization code (written in Julia) that approximates a grayscale image with an one composed from complete sets of [double-nine dominoes](http://www.domino-games.com/domino-rules/double-nine.html). 
+This repository is home to optimization code (written in Julia) that approximates a given image (could be color or grayscale) with a mosaic in complete sets of [double-nine dominoes](http://www.domino-games.com/domino-rules/double-nine.html). 
 
 <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Target_Images/HM.jpg"><img src="/Data/Target_Images/HM.jpg?raw=true" width="245px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/HM_white_constrained.png"><img src="/Data/Mosaic_Images/HM_white_constrained.png?raw=true" width="250px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/HM_black_constrained.png"><img src="/Data/Mosaic_Images/HM_black_constrained.png?raw=true" width="250px"></a>
 
-For example, consider the image on the left of a young [Hank Marvin](https://en.wikipedia.org/wiki/Hank_Marvin) from his days with [The Shadows](https://en.wikipedia.org/wiki/The_Shadows). The two mosaics to its right (zoom in to see the tiles), each in 12 complete sets of double-nine dominoes, are a pointillistic representation of this black-and-white photo of Hank. 
+For example, consider the image on the left of a young [Hank Marvin](https://en.wikipedia.org/wiki/Hank_Marvin) from his days with [The Shadows](https://en.wikipedia.org/wiki/The_Shadows). Code in this repository was used to generate the two mosaics (the images in the middle and on the right) -- zoom in to see the tiles -- each in 12 complete sets of double-nine dominoes, as a pointillistic representation of the black-and-white photo of Hank. 
 
 To know more about these domino mosaics, and their interpretation as the solution to an integer program, watch Robert Bosch of Oberlin College give this [talk at Google](https://www.youtube.com/watch?v=g3CiVrN-BnY). 
 
