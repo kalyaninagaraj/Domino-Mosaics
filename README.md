@@ -64,7 +64,7 @@ To learn more about domino mosaics, both the art form and its interpretation as 
 [@kalyaninagaraj](https://github.com/kalyaninagaraj)
 
 ## Photo Credit
-The image of Hank Marvin is cropped from a [group photo](https://commons.wikimedia.org/wiki/File:Cliff_Richard_aankomst_met_zijn_Shadows,_Bestanddeelnr_913-7397.jpg) of The Shadows, which appears in the public domain. 
+The image of Hank Marvin is cropped from a [group photo](https://commons.wikimedia.org/wiki/File:Cliff_Richard_aankomst_met_zijn_Shadows,_Bestanddeelnr_913-7397.jpg) of The Shadows that appears in the public domain. 
 
 ## References
 1. This [book review](https://blogs.scientificamerican.com/roots-of-unity/the-mathematics-of-opt-art/) in the Scientific American of Robert Bosch's book [Opt Art](https://press.princeton.edu/books/hardcover/9780691164069/opt-art) is a great start if you're diving into Bob's world of _pointillism-via-optimization_. 
