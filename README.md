@@ -25,7 +25,7 @@ To know more about these domino mosaics, and their interpretation as the solutio
    - Run code _once for each tile color_. The images (more precisely, a cell array of matrices representing the domino images) are saved to `Data/Domino_Set_Images/dominoes_with_white_dots_V7.mat` and `Data/Domino_Set_Images/dominoes_with_white_dots_V7.mat`. 
 
 
-2. Next, choose a target image. Crop the image to accomodate multiple complete sets of dominoes -- the exact number needs to be calculated manually and will depend on the cropped image dimensions. Then run this next code to perform some image processing and to obtain a compressed, grayscale version of the image.
+2. Next, choose a target image. Crop the image to accomodate multiple complete sets of dominoes -- the exact number needs to be calculated manually and will depend on the cropped image dimensions. Then run this next code to perform some image processing and obtain a compressed, grayscale version of the image.
 
    - CODE: `Code/Octave/preprocessImage.m`
 
@@ -35,13 +35,13 @@ To know more about these domino mosaics, and their interpretation as the solutio
       3. Run code by entering `preprocessImage ('HM')`. 
 
    - INPUT: 
-      1. Input parameter `'HM'` directs the code to look for the target image `HM.jpg` in `Data/Target_Images/`.
-      2. The code will ask user to manually enter dimensions `m` and `n` of the domino portrait. These dimensions are such that `mn = 110s`, where `s` is the number of complete sets used in the image. Also, manually enter `k`, the size of each cell, such that `mk` equals the height (in pixels) and `nk` equals the width (also in pixels) of the cropped image. For example, for Hank's potrait, set `m` to 40, `n` to 33, and `k` to 10. This means, in the next step, the optimization code will be using `s` = 12 complete sets of double-nine dominoes to generate the final mosaic. 
+      1. Input parameter `'HM'` directs the code to look for the target image `HM.jpg` (cropped photo of Hank) in `Data/Target_Images/`.
+      2. The code will ask the user to manually enter (i) dimensions `m` and `n` of the domino portrait. These dimensions are such that `mn = 110s`, where `s` is the number of complete sets used in the image, and (ii) `k`, the size of each square cell, such that `mk` equals the height (in pixels) and `nk` equals the width (also in pixels) of the cropped image. For example, for Hank's potrait, set `m` to 40, `n` to 33, and `k` to 10. This means, in the next step, the optimization code will be using `s` = 12 complete sets of double-nine dominoes to generate the final mosaic. 
 
    - OUTPUT: A scaled and compressed image file `Data/Compressed_Images/HM.txt` in the form of a matrix of integers ranging from 0 and 9. 
 
 
-3. And finally, approximate a greyscale image with `s` sets of double-nine dominoes by solving a binary integer program. 
+3. Finally, approximate a greyscale image with `s` sets of double-nine dominoes by solving a binary integer program. 
 
    - CODE: `Code/Julia/ModuleDominoes.jl`
 
@@ -55,9 +55,10 @@ To know more about these domino mosaics, and their interpretation as the solutio
        julia> using .Dominoes
        julia> dominoes("HM", "white", "constrained")
        ```
+       
    - INPUT: The input parameter `"constrained"` indicates that _all_ the dominoes in `s` complete sets, `55s` to be precise, will be used to generate the final mosaic. Setting this last parameter to `"unconstrained"` indicates to the code that the mosaic is to be built from an unlimited supply of dominoes, which naturally does not make for an interesting optimization problem. The second input parameter (in this example, `'white'`) indicates the color of the dots on the dominoes. 
 
-   - OUTPUT: For the above example, the code will generate `Data/Mosaic_Images/HM_white_constrained.png`, a mosaic in black domino tiles with white tiles. 
+   - OUTPUT: The code will generate the image `Data/Mosaic_Images/HM_white_constrained.png`, a mosaic in black domino tiles with white dots. 
 
 ## Code Credits
 [@kalyaninagaraj](https://github.com/kalyaninagaraj)
