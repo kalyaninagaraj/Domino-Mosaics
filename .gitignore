@@ -1,2 +1,8 @@
 .DS_Store
 Code/.DS_Store
+Data/Compressed_Images/CE*
+Data/Mosaic_Images/CE*
+Data/Optimization_Output/Images/CE*
+Data/Optimization_Output/Indices/CE*
+Data/Optimization_Output/Model_files/CE*
+Data/Target_Images/CE*
