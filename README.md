@@ -10,38 +10,38 @@ For example, consider the image on the left of a young [Hank Marvin](https://en.
 
 To know more about these domino mosaics, and their interpretation as the solution to an integer program, watch Robert Bosch of Oberlin College give this [talk at Google](https://www.youtube.com/watch?v=g3CiVrN-BnY). 
 
-## Instructions
+## Instructions To Create Your Own Domino Mosaic
 1. First, create a library of images for each domino in a set of 55 double-nine dominoes. 
 
-  - CODE: `Code/Octave/createDominoSet.m`
+   - CODE: `Code/Octave/createDominoSet.m`
 
-  - TO RUN CODE: 
-      1. Open Terminal and change current directory to `Code/Octave/`. 
-      2. Open Octave by entering `octave` at the terminal. 
-      3. To generate images of black tiles with white dots, run the octave code by entering `createDominoSet('white')`. To generate a images of white dominoes with black dots, set input argument to `'black'` instead of `'white'`.  
+   - TO RUN CODE:
+     1. Open Terminal and change current directory to `Code/Octave/`. 
+     2. Open Octave by entering `octave` at the terminal. 
+     3. To generate images of black domino tiles with white dots, run the octave code by entering `createDominoSet('white')`. To generate images of white dominoes with black dots, change input argument to `'black'`.  
 
-   - OUTPUT: A MATLAB (and Octave) compatible file `.mat` in `Data/Domino_Set_Images`.  
+   - OUTPUT: A MATLAB (and Octave) compatible `.mat` file in `Data/Domino_Set_Images`.  
 
-   - Run code _once_ for each tile color. The images (more precisely, the cell array of matrices) are saved to `Data/Domino_Set_Images/dominoes_with_black_dots_V7.mat` and `Data/Domino_Set_Images/dominoes_with_white_dots_V7.mat`. 
+   - Run code _once_ for each tile color. The images (more precisely, a cell array of matrices representing the domino images) are saved to `Data/Domino_Set_Images/dominoes_with_white_dots_V7.mat` and `Data/Domino_Set_Images/dominoes_with_white_dots_V7.mat`. 
 
 
-2. Next, choose a target image. Crop the image to accomodate multiple complete sets of dominoes. The exact number will be determined manually depending on the cropped image's dimensions. Now run the code to perform some image processing and to obtain a compressed, grayscale version of the image in the form of a matrix of integers. 
+2. Next, choose a target image. Crop the image to accomodate multiple complete sets of dominoes -- the exact number needs to be calculated manually and will depend on the cropped image dimensions. Now run the code to perform some image processing and to obtain a compressed, grayscale version of the image in the form of another matrix.
 
    - CODE: `Code/Octave/preprocessImage.m`
 
    - TO RUN CODE: 
       1. Open Terminal and change current directory to `Octave_scripts`. 
       2. Open Octave by entering `octave`. 
-      3. Run code by entering `preprocessImage ('CE')`. 
+      3. Run code by entering `preprocessImage ('HM')`. 
 
    - INPUT: 
-      1. Input parameter `'CE'` directs the code to look for the target image `CE.jpg` in `Data/Target_Images/`.
-      2. The code will ask user to manually enter dimensions `m` and `n` of the domino portrait. These dimensions are such that `mn = 110s`, where `s` is the number of complete sets used in the image. Also, manually enter `k`, the size of each cell, such that `mk` equals the number of rows of pixels and `nk` equals the number of columns of pixels in the trimmed image. For this example, set `m` to 44, `n` to 30, and `k` to 26. 
+      1. Input parameter `'HM'` directs the code to look for the target image `HM.jpg` in `Data/Target_Images/`.
+      2. The code will ask user to manually enter dimensions `m` and `n` of the domino portrait. These dimensions are such that `mn = 110s`, where `s` is the number of complete sets used in the image. Also, manually enter `k`, the size of each cell, such that `mk` equals the height (in pixels) and `nk` equals the width (also in pixels) of the cropped image. For example, for Hank's potrait, set `m` to 40, `n` to 33, and `k` to 10. This means, in the next step, the optimization code will be using `s` = 12 complete sets of double-nine dominoes to generate the final mosaic. 
 
-   - OUTPUT: A scaled and compressed image file `Data/Compressed_Images/CE.txt` in the form of a matrix of integers ranging from 0 and 9. 
+   - OUTPUT: A scaled and compressed image file `Data/Compressed_Images/HM.txt` in the form of a matrix of integers ranging from 0 and 9. 
 
 
-3. And finally, approximate a greyscale image with s sets of double-nine dominoes by solving a binary integer program. 
+3. And finally, approximate a greyscale image with `s` sets of double-nine dominoes by solving a binary integer program. 
 
    - CODE: `Code/Julia/ModuleDominoes.jl`
 
@@ -53,11 +53,11 @@ To know more about these domino mosaics, and their interpretation as the solutio
        ```
        julia> include("ModuleDominoes.jl")
        julia> using .Dominoes
-       julia> dominoes("CE", "white", "constrained")
+       julia> dominoes("HM", "white", "constrained")
        ```
-   - INPUT: The input parameter `"constrained"` indicates that complete sets of dominoes will be used to generate the final mosaic. Setting this last parameter to `"unconstrained"` indicates to the code that the mosaic can be built from an unending supply of dominoes, which naturally does not make for an interesting optimization problem. 
+   - INPUT: The input parameter `"constrained"` indicates that _all_ the dominoes in `s` complete sets, `55s` to be precise, will be used to generate the final mosaic. Setting this last parameter to `"unconstrained"` indicates to the code that the mosaic is to be built from an unlimited supply of dominoes, which naturally does not make for an interesting optimization problem. The second input parameter (in this example, `'white'`) indicates the color of the dots on the dominoes. 
 
-   - OUTPUT: The second input parameter determines the color of the dots on the dominoes. For the above example, the code will generate `Data/Mosaic_Images/CE_white_constrained.png`. 
+   - OUTPUT: For the above example, the code will generate `Data/Mosaic_Images/HM_white_constrained.png`, a mosaic in black domino tiles with white tiles. 
 
 ## Code Credits
 [@kalyaninagaraj](https://github.com/kalyaninagaraj)
