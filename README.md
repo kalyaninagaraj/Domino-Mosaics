@@ -25,7 +25,7 @@ To know more about these domino mosaics, and their interpretation as the solutio
    - Run code _once for each tile color_. The images (more precisely, a cell array of matrices representing the domino images) are saved to `Data/Domino_Set_Images/dominoes_with_white_dots_V7.mat` and `Data/Domino_Set_Images/dominoes_with_white_dots_V7.mat`. 
 
 
-2. Next, choose a target image. Crop the image to accomodate multiple complete sets of dominoes -- the exact number needs to be calculated manually and will depend on the cropped image dimensions. Now run the code to perform some image processing and to obtain a compressed, grayscale version of the image in the form of another matrix.
+2. Next, choose a target image. Crop the image to accomodate multiple complete sets of dominoes -- the exact number needs to be calculated manually and will depend on the cropped image dimensions. Then run this next code to perform some image processing and to obtain a compressed, grayscale version of the image.
 
    - CODE: `Code/Octave/preprocessImage.m`
 
