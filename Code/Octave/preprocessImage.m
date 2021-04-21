@@ -42,7 +42,7 @@ function preprocessImage(image_name)
    #sigma = std2(Idouble); 
    #K = imadjust(I,[avg-n*sigma avg+n*sigma], []);
    
-   K = imadjust(I,[0 1], []);
+   K = imadjust(I,[0 0.9], []);
 
    #K = I; 
    imwrite(K, strcat("../../Data/Compressed_Images/", image_name, "_saturated.png"))
