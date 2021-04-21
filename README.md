@@ -56,7 +56,7 @@ To learn more about domino mosaics, both the art form and its interpretation as 
        julia> dominoes("HM", "white", "constrained")
        ```
        
-   - INPUT: The input parameter `"constrained"` indicates that _all_ the dominoes in `s` complete sets, `55s` to be precise, will be used to generate the final mosaic. Setting this last parameter to `"unconstrained"` indicates to the code that the mosaic is to be built from an unlimited supply of dominoes, which naturally does not make for an interesting optimization problem. The second input parameter (in this example, `'white'`) indicates the color of the dots on the dominoes. 
+   - INPUT: The input parameter `"constrained"` indicates that _all_ dominoes in the `s` complete sets, `55s` to be precise, will be used to generate the final mosaic. Setting this last parameter to `"unconstrained"` indicates to the code that the mosaic is to be built from an unlimited supply of dominoes, which naturally does not make for an interesting optimization problem. The second input parameter (in this example, `'white'`) indicates the color of the dots on the dominoes. 
 
    - OUTPUT: The code will generate the image `Data/Mosaic_Images/HM_white_constrained.png`, a mosaic in black domino tiles with white dots. 
 
