@@ -12,7 +12,7 @@ This repository is home to optimization code in Julia that approximates a graysc
 
 The image on the left is of a young [Hank Marvin](https://en.wikipedia.org/wiki/Hank_Marvin) from his days with [The Shadows](https://en.wikipedia.org/wiki/The_Shadows). The two mosaics to its right (zoom in to see the tiles), each in 12 complete sets of double-nine dominoes, are a pointillistic representation of this black-and-white photo of Hank. 
 
-To know more about domino mosaics, and their interpretation as the solution to an integer program, watch Bob Bosch of Oberlin College [talk at Google](https://www.youtube.com/watch?v=g3CiVrN-BnY). 
+To know more about domino mosaics, and their interpretation as the solution to an integer program, watch Robert Bosch of Oberlin College giving this [talk at Google](https://www.youtube.com/watch?v=g3CiVrN-BnY). 
 
 ## Instructions
 1. First, create a library of images for each domino in a set of 55 double-nine dominoes. 
@@ -65,6 +65,9 @@ To know more about domino mosaics, and their interpretation as the solution to a
 
 ## Code Credits
 [@kalyaninagaraj](https://github.com/kalyaninagaraj)
+
+## Photo Credit
+The image of Hank Marvin is cropped from a [group photo](https://commons.wikimedia.org/wiki/File:Cliff_Richard_aankomst_met_zijn_Shadows,_Bestanddeelnr_913-7397.jpg) of The Shadows, which appears in the public domain. 
 
 ## References
 1. This [book review](https://blogs.scientificamerican.com/roots-of-unity/the-mathematics-of-opt-art/) in the Scientific American of Bob Bosch's book [Opt Art](https://press.princeton.edu/books/hardcover/9780691164069/opt-art) is a great introduction to the author's unique take on _pointillism-via-optimization_. 
