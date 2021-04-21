@@ -1,4 +1,4 @@
-# Domino Mosaics, \`a la Robert Bosch and Ken Knowlton
+# Domino Mosaics a la Robert Bosch (and Ken Knowlton)
 
 
 ## About
