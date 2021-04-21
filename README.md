@@ -6,9 +6,9 @@ This repository is home to optimization code (written in Julia) that approximate
 
 <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Target_Images/HM.jpg"><img src="/Data/Target_Images/HM.jpg?raw=true" width="245px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/HM_white_constrained.png"><img src="/Data/Mosaic_Images/HM_white_constrained.png?raw=true" width="250px"></a>&nbsp;&nbsp; <a href="https://github.com/kalyaninagaraj/Domino-Mosaics/blob/main/Data/Mosaic_Images/HM_black_constrained.png"><img src="/Data/Mosaic_Images/HM_black_constrained.png?raw=true" width="250px"></a>
 
-For example, consider the image on the left of a young [Hank Marvin](https://en.wikipedia.org/wiki/Hank_Marvin) from his days with [The Shadows](https://en.wikipedia.org/wiki/The_Shadows). Code in this repository was used to generate two mosaics (picture in the middle and on the right -- zoom in to see the tiles), each in 12 complete sets of double-nine dominoes, as a pointillistic representation of the black-and-white photo of Hank. 
+For example, consider the image on the left of a young [Hank Marvin](https://en.wikipedia.org/wiki/Hank_Marvin) from his days with [The Shadows](https://en.wikipedia.org/wiki/The_Shadows). Code in this repository was used to generate two mosaics (see picture in the middle and on the right -- zoom in to see the tiles), each in 12 complete sets of 55 double-nine dominoes, as a pointillistic representation of the black-and-white photo of Hank. 
 
-To know more about these domino mosaics, and their interpretation as the solution to an integer program, watch Robert Bosch of Oberlin College give this [talk at Google](https://www.youtube.com/watch?v=g3CiVrN-BnY). 
+To know more about domino mosaics, and their interpretation as the solution to an integer program, watch Robert Bosch of Oberlin College give this [talk at Google](https://www.youtube.com/watch?v=g3CiVrN-BnY). 
 
 ## Instructions To Create Your Own Domino Mosaic
 1. First, create a library of images for each domino in a set of 55 double-nine dominoes. 
