@@ -14,7 +14,7 @@ http://www.optimization-online.org/DB_FILE/2003/09/722.pdf
 ```julia-repl
 julia> include("ModuleDominoes.jl")
 julia> using .Dominoes
-julia> dominoes("Frankenstein", "white", "constrained")
+julia> createMosaic("Frankenstein", "white", "constrained")
 ```
 
 # Author

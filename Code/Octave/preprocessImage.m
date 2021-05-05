@@ -38,14 +38,14 @@ function preprocessImage(image_name)
    ## Saturate based on mean and std deviation of pixel values
    #Idouble = im2double(I);  
    #n = 1;
-   #avg = mean2(Idouble);
-   #sigma = std2(Idouble); 
+   #avg = mean2(Idouble)
+   #sigma = std2(Idouble)
    #K = imadjust(I,[avg-n*sigma avg+n*sigma], []);
    
-   K = imadjust(I,[0 0.9], []);
+   K = imadjust(I,[0.08 0.6], []);
 
    #K = I; 
-   imwrite(K, strcat("../../Data/Compressed_Images/", image_name, "_saturated.png"))
+   #imwrite(K, strcat("../../Data/Compressed_Images/", image_name, "_saturated.png"))
 
 
    # III. MANUALLY ENTER DIMENSIONS OF THE DOMINO POTRAIT:
